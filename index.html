@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טליה אסבן יחיאם - קישורים</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* הגדרות גלובליות ואיפוס */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4; /* רקע בהיר */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* מתחילים מלמעלה */
+            min-height: 100vh;
+            direction: rtl; /* כיוון טקסט מימין לשמאל */
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* רוחב מירבי סטנדרטי לקישורי ביו */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* עיצוב התמונה */
+        .profile-image-container {
+            margin-bottom: 10px; /* צמצום המרווח לפני השם */
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* הופך את התמונה לעיגול */
+            object-fit: cover; /* מבטיח שהתמונה תתמלא בתוך העיגול */
+            border: 4px solid #ffffff; /* גבול לבן סביב התמונה */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קל */
+        }
+
+        /* עיצוב הכותרת (השם) */
+        .page-title {
+            font-size: 24px;
+            font-weight: 800; /* מודגש מאוד */
+            color: #333;
+            margin-bottom: 30px; /* מרווח טוב לפני הכפתורים */
+            line-height: 1.2;
+        }
+
+        /* עיצוב הקישורים - בסיס */
+        .link-button {
+            display: block;
+            background-color: #ffffff;
+            color: #333;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.1s;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: right;
+        }
+
+        .link-button:hover {
+            background-color: #e9e9e9;
+            transform: translateY(-2px);
+        }
+
+        .link-icon {
+            margin-left: 10px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+
+        /* ************************************ */
+        /* עיצוב מיוחד - כפתור הספר (כחול) */
+        .link-button.book {
+            background-color: #007bff; /* כחול סטנדרטי */
+            color: #ffffff; /* טקסט לבן */
+            border: none;
+        }
+        .link-button.book:hover {
+            background-color: #0056b3; /* כחול כהה יותר בריחוף */
+        }
+        .link-button.book .link-icon {
+             color: #ffffff;
+        }
+        /* ************************************ */
+
+
+        /* עיצוב כפתור האינסטגרם */
+        .link-button.instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: #ffffff;
+            border: none;
+        }
+        .link-button.instagram .link-icon {
+             color: #ffffff;
+        }
+
+        /* עיצוב כפתור וואטסאפ */
+        .link-button.whatsapp {
+            background-color: #25d366; /* צבע ירוק וואטסאפ */
+            color: #ffffff;
+            border: none;
+        }
+        .link-button.whatsapp .link-icon {
+             color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile-image-container">
+        <img src="https://i.imgur.com/dVAH411.jpeg" alt="תמונת פרופיל" class="profile-image">
+    </div>
+
+    <h1 class="page-title">טליה אסבן יחיאם</h1>
+
+    <a href="https://unhappy-hexagon.github.io/book/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnNK7JzwmdWFFDHVYd_fZLRpbvcAxvFfdIOuarrRkEIwyXFe-zw_1Xpz9z388_aem__sY-6EYB0lxDzDZ9CNsb8w" class="link-button book">
+        <i class="fas fa-book-open link-icon"></i>
+        לינק לרכישת הספר
+    </a>
+
+    <a href="https://www.instagram.com/talya_asban_yechiam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="link-button instagram">
+        <i class="fab fa-instagram link-icon"></i>
+        לעמוד האינסטגרם שלי
+    </a>
+
+    <a href="https://wa.me/972546433969" class="link-button whatsapp">
+        <i class="fab fa-whatsapp link-icon"></i>
+        שליחת הודעת וואטסאפ
+    </a>
+
+</div>
+
+</body>
+</html>
